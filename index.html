@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Emergency Service</title>
 </head>
@@ -16,7 +16,7 @@
     <header class="flex justify-between max-w-[1250px] mx-auto p-6">
         <div class="flex items-center gap-2">
             <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
-            <p class="text-[#006747] font-black text-xl">Emergency <br> Service</p>
+            <p class="text-[#006747] font-black text-xl font-hind">Emergency <br> Service</p>
         </div>
         <div class="flex items-center gap-6">
             <div class="flex items-center gap-2">
@@ -27,14 +27,39 @@
                 <p class="font-black text-xl">100</p>
                 <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
             </div>
-            <button class="w-[127px] h-[52px] bg-[#00A63E] text-white font-semibold rounded-4xl"><span>0</span> Copy</button>
+            <button class="w-[127px] h-[52px] bg-[#00A63E] text-white font-semibold rounded-4xl"><span>0</span>
+                Copy</button>
         </div>
     </header>
 
-    <section class="flex flex-col items-center gap-3 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full pt-5 pb-5">
+    <section
+        class="flex flex-col items-center gap-3 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full pt-5 pb-5">
         <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
-        <h1 class="font-bold text-4xl text-white">Emergency Service Directory</h1>
-        <p class="font-semibold text-white text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <h1 class="font-bold text-4xl text-white font-hind">Emergency Service Directory</h1>
+        <p class="font-semibold text-white text-xl font-hind">Government Emergency Services at Your Fingertip – A
+            Project by
+            Government of the People’s Republic of Bangladesh</p>
+    </section>
+
+    <section class="bg-[#97e79f] w-full">
+        <section class=" pt-12 max-w-[1250px] mx-auto">
+            <div class="w-[420px] h-[290px] bg-white rounded-xl p-8 shadow-xl/30">
+                <div class="flex justify-between items-center mb-3">
+                    <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h1 class="font-bold text-2xl">National Emergency Number</h1>
+                <p class="text-[#5C5C5C]">National Emergency</p>
+                <h1 class="font-bold mt-4 text-3xl">999</h1>
+                <button class="text-[#5C5C5C] bg-gray-300  w-[60px] rounded-full"> All</button>
+                <div class="flex gap-3 p-5">
+                    <button class="text-[#5C5C5C] w-1/2 h-[40px] rounded-lg bg-white"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                    <button class="text-white w-1/2 h-[40px] rounded-lg bg-[#00A63E]"><i class="fa-solid fa-phone"></i>
+                        Call</button>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 
