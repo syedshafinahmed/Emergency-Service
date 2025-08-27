@@ -17,9 +17,11 @@ heartCounter("heart7");
 heartCounter("heart8");
 heartCounter("heart9");
 
-
-
-
+let copyCount = 0;
+document.getElementById('copy1').addEventListener('click', function(){
+    copyCount++;
+    document.getElementById('copy').innerText = copyCount;
+})
 
 
 document.getElementById('call1').addEventListener("click", function () {
