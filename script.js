@@ -251,3 +251,11 @@ document.getElementById('call9').addEventListener("click", function () {
 })
 
 
+
+
+document.getElementById('clear').addEventListener('click', function(){
+    const history = document.getElementById('call-history');
+    history.innerHTML = "";
+})
+
+
