@@ -12,7 +12,7 @@
     <title>Emergency Service</title>
 </head>
 
-<body>
+<body class="font-hind">
     <header class="flex flex-col md:flex-row items-center md:justify-between max-w-[1250px] mx-auto p-6 gap-4">
         <div class="flex items-center gap-2">
             <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
@@ -20,7 +20,7 @@
         </div>
         <div class="flex items-center gap-6">
             <div class="flex items-center gap-2 bg-[#b7ebbc] w-[127px] h-[52px] justify-center items-center rounded-4xl">
-                <p class="font-black text-xl">0</p>
+                <p id="heart-count" class="font-black text-xl">0</p>
                 <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
             </div>
             <div class="flex items-center gap-2 bg-[#b7ebbc] w-[127px] h-[52px] justify-center items-center rounded-4xl">
@@ -45,10 +45,11 @@
     <section class=" bg-[#b7ebbc] w-full">
         <section class="flex flex-col md:flex-row justify-center gap-5 max-w-[1250px] mx-auto">
             <section class=" pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4  gap-5 p-5 justify-items-center mx-auto">
+               
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart1" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">National Emergency Number</h1>
                     <p class="text-[#5C5C5C] text-xs">National Emergency</p>
@@ -65,7 +66,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/police.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart2" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Police Helpline Number</h1>
                     <p class="text-[#5C5C5C] text-xs">Police</p>
@@ -82,7 +83,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart3" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Fire Service Number</h1>
                     <p class="text-[#5C5C5C] text-xs">Fire Service</p>
@@ -99,7 +100,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart4" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Ambulance Service</h1>
                     <p class="text-[#5C5C5C] text-xs">Ambulance</p>
@@ -116,7 +117,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart5" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Women & Child Helpline</h1>
                     <p class="text-[#5C5C5C] text-xs">Women & Child Helpline</p>
@@ -133,7 +134,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart6" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Anti-Corruption Helpline</h1>
                     <p class="text-[#5C5C5C] text-xs">Anti-Corruption</p>
@@ -150,7 +151,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart7" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Electricity Helpline</h1>
                     <p class="text-[#5C5C5C] text-xs">Electricity Outage</p>
@@ -167,7 +168,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart8" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Brac Helpline</h1>
                     <p class="text-[#5C5C5C] text-xs">Brac</p>
@@ -184,7 +185,7 @@
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="heart9" class="fa-regular fa-heart"></i>
                     </div>
                     <h1 class="font-bold text-sm">Bangladesh Railway Helpline </h1>
                     <p class="text-[#5C5C5C] text-xs">Bangladesh Railway</p>
@@ -212,6 +213,7 @@
             </section>
         </section>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
