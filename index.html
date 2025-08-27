@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="flex justify-between max-w-[1250px] mx-auto p-6">
+    <header class="flex flex-col md:flex-row items-center md:justify-between max-w-[1250px] mx-auto p-6 gap-4">
         <div class="flex items-center gap-2">
             <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
             <p class="text-[#006747] font-black text-xl font-hind">Emergency <br> Service</p>
@@ -35,16 +35,16 @@
     <section
         class="flex flex-col items-center gap-3 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full pt-7 pb-7">
         <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
-        <h1 class="font-bold text-4xl text-white font-hind">Emergency Service Directory</h1>
-        <p class="font-semibold text-white text-xl font-hind">Government Emergency Services at Your Fingertip – A
+        <h1 class="font-bold text-4xl text-white text-center font-hind">Emergency Service Directory</h1>
+        <p class="font-semibold text-white text-xl text-center font-hind px-4 md:px-0">Government Emergency Services at Your Fingertip – A
             Project by
             Government of the People’s Republic of Bangladesh</p>
     </section>
 
 
     <section class=" bg-[#b7ebbc] w-full">
-        <section class="flex justify-center gap-5 max-w-[1250px] mx-auto">
-            <section class=" pt-12 grid grid-cols-3 w-3/4  gap-5 p-5">
+        <section class="flex flex-col md:flex-row justify-center gap-5 max-w-[1250px] mx-auto">
+            <section class=" pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-3/4  gap-5 p-5 justify-items-center mx-auto">
                 <div class="w-[280px] h-[255px] bg-white rounded-xl p-6 shadow-xl/30">
                     <div class="flex justify-between items-center mb-3">
                         <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
@@ -202,7 +202,7 @@
             
             </section>
 
-            <section class="w-1/4  pt-12">
+            <section class="w-full md:w-1/4  pt-12">
                 <section class="bg-white rounded-xl">
                     <div class="flex items-center justify-between p-5">
                         <h1 class="font-medium text-xl text-black"><i class="fa-regular fa-clock"></i> Call History</h1>
