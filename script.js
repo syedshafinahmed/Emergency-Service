@@ -7,21 +7,23 @@ function heartCounter(heartId) {
         heartCount.innerText = count;
     });
 }
-heartCounter("heart1");
-heartCounter("heart2");
-heartCounter("heart3");
-heartCounter("heart4");
-heartCounter("heart5");
-heartCounter("heart6");
-heartCounter("heart7");
-heartCounter("heart8");
-heartCounter("heart9");
+for (let i = 1; i <= 9; i++) {
+    heartCounter(`heart${i}`);
+}
+
+
 
 let copyCount = 0;
-document.getElementById('copy1').addEventListener('click', function(){
-    copyCount++;
-    document.getElementById('copy').innerText = copyCount;
-})
+function copyCounter(copyId) {
+    document.getElementById(copyId).addEventListener('click', function() {
+        copyCount++;
+        document.getElementById('copy').innerText = copyCount;
+    });
+}
+for (let i = 1; i <= 9; i++) {
+    copyCounter(`copy${i}`);
+}
+
 
 
 document.getElementById('call1').addEventListener("click", function () {
