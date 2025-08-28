@@ -15,9 +15,15 @@ for (let i = 1; i <= 9; i++) {
 
 let copyCount = 0;
 function copyCounter(copyId) {
-    document.getElementById(copyId).addEventListener('click', function() {
+    const btn = document.getElementById(copyId);
+    btn.addEventListener('click', function () {
+        const card = btn.parentElement.parentElement; 
+        const number = card.querySelector("h1.mt-4").innerText;
+        navigator.clipboard.writeText(number);
+        alert("📋 Copied " + number);
+
         copyCount++;
-        document.getElementById('copy').innerText = copyCount;
+        document.getElementById("copy").innerText = copyCount;
     });
 }
 for (let i = 1; i <= 9; i++) {
