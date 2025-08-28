@@ -248,7 +248,7 @@ document.getElementById('call9').addEventListener("click", function () {
         section.innerHTML = 
             `<div class="bg-gray-300 rounded-xl p-5 flex justify-between items-center">
                 <div>
-                    <h1 class="font-bold text-sm">Bangladesh Railway Helpline</h1>
+                    <h1 class="font-bold text-sm">Bangladesh Railway</h1>
                     <p class="text-[#5C5C5C] text-xs">163</p>
                 </div>
                 <div class="text-xs">${timeString}</div>
